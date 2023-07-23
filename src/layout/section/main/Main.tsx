@@ -1,7 +1,7 @@
 import React from "react";
 import myPhoto from "../../../assets/images/photo.png"
 import { styled } from "styled-components";
-import { FlexContainer } from "../../../components/logo/FlexContainer";
+import { FlexContainer } from "../../../components/FlexContainer";
 
 export const Main = () => {
     return (
