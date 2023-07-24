@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
-import { FlexContainer } from "../../components/FlexContainer";
-import { SectionTitle } from "../../components/SectionTitle";
+import { FlexContainer } from "../../../components/FlexContainer";
+import { SectionTitle } from "../../../components/SectionTitle";
 import { StyledSkill } from "./skill/StyledSkill";
 
 export const MySkils = () => {

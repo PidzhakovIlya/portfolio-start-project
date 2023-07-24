@@ -21,6 +21,4 @@ const StyledSocialListItem = styled.li`
     
         list-style: none;
         /* color: white; */
-        
-     
 `
