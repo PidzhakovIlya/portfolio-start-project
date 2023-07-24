@@ -45,8 +45,9 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 li{
+    margin: 30px;
      align-self: center;
-     width: 33%;}
+     width: 25%;}
     
     
 `
