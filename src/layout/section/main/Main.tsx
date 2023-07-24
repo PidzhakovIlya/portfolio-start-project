@@ -5,17 +5,17 @@ import { FlexContainer } from "../../../components/FlexContainer";
 
 export const Main = () => {
     return (
-        <div>
+        <StyledMine>
             <FlexContainer align="center" justify="space-around" >
                 <div>
-                    <Tytle>A WEB DEVELOPER</Tytle>
+                    <Title>A WEB DEVELOPER</Title>
                     <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
                     <button>Let’s begin</button>
                 </div>
 
                 <StyledPhoto src={myPhoto} alt="my photo" />
             </FlexContainer>
-        </div>
+        </StyledMine>
     )
 }
 
@@ -25,7 +25,7 @@ const StyledPhoto = styled.img`
     object-fit: cover;
     border-radius: 50px 0;
 `
-const Tytle = styled.h1`
+const Title = styled.h1`
     color: #fff;
     font-size: 64px;
     font-family: "Poppins", sans-serif;
@@ -36,4 +36,7 @@ const Text = styled.p`
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     text-align: start;
+`
+const StyledMine = styled.section`
+  background-color: #0F1624;
 `
