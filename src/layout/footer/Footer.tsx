@@ -30,6 +30,3 @@ const StyledFooter = styled.footer`
     color: #fff;
   }
 `
-const MyContacts = styled.div`
-  
-`
