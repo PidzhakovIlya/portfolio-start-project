@@ -6,6 +6,7 @@ import {MySkils} from './layout/section/skills/Skills';
 import {Works} from "./layout/section/works/Works";
 import {Testimony} from "./layout/testimony/Testimony";
 import { Contact } from './layout/section/contacts/Contacts';
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <MySkils/>
             <Testimony/>
             <Contact/>
+            <Footer/>
         </div>
     );
 }
