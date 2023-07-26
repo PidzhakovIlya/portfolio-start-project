@@ -43,6 +43,5 @@ const Description = styled.p`
 `
 const Title = styled.h3`
   color: #FFF;
-  font-family: Poppins;
   font-size: 36px;
 `
