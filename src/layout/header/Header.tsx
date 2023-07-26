@@ -1,10 +1,10 @@
 import React from "react";
-import { styled } from "styled-components";
-import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
-import { SocialList } from "../../components/social/SocialList";
+import {styled} from "styled-components";
+import {Logo} from "../../components/logo/Logo";
+import {SocialList} from "../../components/social/SocialList";
 import {Container} from "../../components/Container";
 import {FlexContainer} from "../../components/FlexContainer";
+import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
 const items = ["Projects", "Technologies", "About me"]
 export const Header = () => {
@@ -12,9 +12,9 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexContainer justify={"space-around"} align={"center"}>
-                    <Logo />
-                    <Menu menuItems={items}/>
-                    <SocialList />
+                    <Logo/>
+                    <HeaderMenu menuItems={items}/>
+                    <SocialList/>
                 </FlexContainer>
             </Container>
         </StyledHeader>
@@ -22,8 +22,12 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-    background-color: #0F1624;
-    //height: 137px;
-    font-size: 30px;
-    
+  background-color: #0F1624;
+  padding: 44px 0;
+  font-size: 30px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
 `
