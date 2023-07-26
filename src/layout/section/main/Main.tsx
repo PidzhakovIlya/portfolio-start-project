@@ -38,5 +38,5 @@ const Text = styled.p`
     text-align: start;
 `
 const StyledMine = styled.section`
-  background-color: #0F1624;
+
 `

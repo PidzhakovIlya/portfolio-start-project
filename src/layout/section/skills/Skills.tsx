@@ -34,22 +34,23 @@ export const MySkils = () => {
 }
 
 const StyledSectionSkils = styled.section`
-    background-color: #161D2A;
-    color: white;
     min-height: 100vh;
     
 `
 const SkilList = styled.ul`
-width: 1920px;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-li{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  li {
     margin: 30px;
-     align-self: center;
-     width: 25%;}
-    
-    
+    align-self: center;
+    width: 25%;
+  }
+
+
 `
 
 const SubTitle = styled.h3`

@@ -13,7 +13,7 @@ export const Work = (props: WorkPropsType) => {
             <Image src={props.src} alt="project-1"/>
             <Title>{props.title}</Title>
             <Description>{props.text}</Description>
-            <Link href={"#"}>Look it up</Link>
+            <button>Look it up</button>
         </StyledWork>
     );
 };
@@ -36,15 +36,7 @@ const Image = styled.img`
   height: 266px;
   object-fit: cover;
 `
-const Link = styled.a`
-  width: 200px;
-  height: 60px;
-  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-  border-radius: 83px;
-  color: #FFF;
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
-`
+
 
 const Description = styled.p`
 
