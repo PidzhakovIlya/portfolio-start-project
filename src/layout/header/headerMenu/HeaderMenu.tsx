@@ -46,7 +46,7 @@ const Mask = styled.span`
   height: 50%;
   overflow: hidden;
   //outline: 1px solid red;
-   color: ${theme.colors.accent};
+   color: ${theme.colors.font};
 
   & + & {
     top: 50%;
@@ -63,7 +63,7 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 3px;
-    background-color: #ff0000;
+    background-color: ${theme.colors.font};
     position: absolute;
     top: 50%;
     left: -10px;
@@ -73,17 +73,18 @@ const ListItem = styled.li`
   }
 
   &:hover {
-    & + & ::before {
+    &::before {
       transform: scale(1);
     }
     
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
       color: ${theme.colors.font};
-      
+
       & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
       }
+    
     }
   }
 
