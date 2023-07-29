@@ -46,7 +46,7 @@ const Mask = styled.span`
   height: 50%;
   overflow: hidden;
   //outline: 1px solid red;
-   color: ${theme.colors.accent};
+   color: ${theme.colors.font};
 
   & + & {
     top: 50%;
@@ -63,17 +63,18 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 3px;
-    background-color: #ff0000;
+    background-color: ${theme.colors.font};
     position: absolute;
     top: 50%;
     left: -10px;
     right: -10px;
     z-index: 1;
     transform: scale(0);
+    transition: 0.3s;
   }
 
   &:hover {
-    & + & ::before {
+    &::before {
       transform: scale(1);
     }
     

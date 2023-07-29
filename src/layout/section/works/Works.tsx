@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Menu} from "../../../components/menu/Menu";
-import {FlexContainer} from "../../../components/FlexContainer";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import projectImg1 from "../../../assets/images/project-1.webp"
 import projectImg2 from "../../../assets/images/project-2.webp"
@@ -13,7 +13,7 @@ export const Works = () => {
         <StyledWorks>
             <SectionTitle>Projects</SectionTitle>
             <Menu menuItems={worksItems}/>
-            <FlexContainer justify={"space-between"} wrap={"wrap"}>
+            <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                 <Work
                     text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                     src={projectImg1}
@@ -26,7 +26,7 @@ export const Works = () => {
                     text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                     src={projectImg2}
                     title={"PROJECT 2"}/>
-            </FlexContainer>
+            </FlexWrapper>
         </StyledWorks>
     );
 };

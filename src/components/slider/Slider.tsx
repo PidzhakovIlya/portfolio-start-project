@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexContainer} from "../FlexContainer";
+import {FlexWrapper} from "../FlexWrapper";
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexContainer direction={"column"}>
+            <FlexWrapper direction={"column"}>
                 <Slide>
                     <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi fuga praesentium
                         quam
@@ -13,7 +13,7 @@ export const Slider = () => {
                         laudantium maxime quae quo ullam vel veritatis.</Text>
                     <Name>@Ivan Ivanow</Name>
                 </Slide>
-            </FlexContainer>
+            </FlexWrapper>
             <Pagination>
                 <span></span>
                 <span></span>

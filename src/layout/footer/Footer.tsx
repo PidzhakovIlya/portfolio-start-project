@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import {FlexContainer} from "../../components/FlexContainer";
+import {FlexWrapper} from "../../components/FlexWrapper";
 import {SocialList} from "../../components/social/SocialList";
 
 export const Footer = () =>{
     return(
         <StyledFooter>
-            <FlexContainer gap={"134px"}>
+            <FlexWrapper gap={"134px"}>
                 <a href="email: ali@ali.ali">Email: <br/> ali@ali.ali</a>
                 <a href="tel:12345678">Telephone:<br/>12345678</a>
-            </FlexContainer>
+            </FlexWrapper>
             <SocialList/>
         </StyledFooter>
     )

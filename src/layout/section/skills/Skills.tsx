@@ -1,14 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
-import { FlexContainer } from "../../../components/FlexContainer";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { StyledSkill } from "./skill/StyledSkill";
 
 export const MySkils = () => {
     return (
-        <StyledSectionSkils>
+        <StyledSectionSkills>
             <SectionTitle>Projects</SectionTitle>
-            <FlexContainer direction="column" align="center">
+            <FlexWrapper direction="column" align="center">
                 <StyledSkill nameSkil="Html" experiens="Beginner" />
                 <StyledSkill nameSkil="CSS, Sass & Bootstrap" experiens="Beginner" />
                 <StyledSkill nameSkil="JavaScript, TypeScript, JQuery" experiens="Beginner" />
@@ -16,10 +16,10 @@ export const MySkils = () => {
                 <StyledSkill nameSkil="Angular" experiens="Beginner" />
                 <StyledSkill nameSkil="React" experiens="Beginner" />
                 <StyledSkill nameSkil="React Native" experiens="Beginner" />
-            </FlexContainer>
+            </FlexWrapper>
             <SubTitle>Additional technologies and skills</SubTitle>
-            <FlexContainer>
-                <SkilList>
+            <FlexWrapper>
+                <SkillList>
                     <li>Git</li>
                     <li>Wordpress</li>
                     <li>Teamwork</li>
@@ -27,17 +27,17 @@ export const MySkils = () => {
                     <li>Engagement</li>
                     <li>B2 english</li>
                     <li>RWD</li>
-                </SkilList>
-            </FlexContainer>
-        </StyledSectionSkils>
+                </SkillList>
+            </FlexWrapper>
+        </StyledSectionSkills>
     )
 }
 
-const StyledSectionSkils = styled.section`
+const StyledSectionSkills = styled.section`
     min-height: 100vh;
     
 `
-const SkilList = styled.ul`
+const SkillList = styled.ul`
   max-width: 1920px;
   width: 100%;
   display: flex;

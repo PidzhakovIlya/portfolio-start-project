@@ -3,7 +3,7 @@ import {styled} from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {SocialList} from "../../components/social/SocialList";
 import {Container} from "../../components/Container";
-import {FlexContainer} from "../../components/FlexContainer";
+import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
 const items = ["Projects", "Technologies", "About me"]
@@ -11,11 +11,11 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <FlexContainer justify={"space-around"} align={"center"}>
+                <FlexWrapper justify={"space-around"} align={"center"}>
                     <Logo/>
                     <HeaderMenu menuItems={items}/>
                     <SocialList/>
-                </FlexContainer>
+                </FlexWrapper>
             </Container>
         </StyledHeader>
     )

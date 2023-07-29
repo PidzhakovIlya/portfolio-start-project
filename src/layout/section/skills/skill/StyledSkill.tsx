@@ -33,11 +33,9 @@ const StyledProgress = styled.div`
 `
 const StyledProgressBar = styled.span`
   width: 50%;
-  height: 32px;
   border-radius: 83px;
   display: block;
   height: 100%;
-  border-radius: 83px;
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);;
   position: relative;
   overflow: hidden;
