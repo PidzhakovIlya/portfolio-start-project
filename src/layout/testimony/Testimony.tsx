@@ -30,7 +30,7 @@ const StyledTestimony = styled.section`
   min-height: 50vh;
 
   & ${SectionTitle} {
-    padding: 47px 0 47px 132px;
+    padding: 47px 132px 47px;
   }
   
 

@@ -7,6 +7,7 @@ import {Works} from "./layout/section/works/Works";
 import {Testimony} from "./layout/testimony/Testimony";
 import { Contact } from './layout/section/contacts/Contacts';
 import {Footer} from "./layout/footer/Footer";
+import {AboutMe} from "./layout/aboutMe/AboutMe";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <MySkils/>
             <Testimony/>
             <Contact/>
+            <AboutMe/>
             <Footer/>
         </div>
     );
