@@ -10,7 +10,7 @@ export const Footer = () =>{
                 <a href="email: ali@ali.ali">Email: <br/> ali@ali.ali</a>
                 <a href="tel:12345678">Telephone:<br/>12345678</a>
             </FlexWrapper>
-            <SocialList/>
+            <SocialList width={"72px"} height={"72px"}/>
         </StyledFooter>
     )
 }

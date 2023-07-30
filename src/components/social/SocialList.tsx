@@ -2,14 +2,17 @@ import React from "react";
 import { styled } from "styled-components";
 import { SociaListItem } from "./SocilListItem";
 
+type SocialListPropsType = {
+    width?: string
+    height?: string
+}
 
-
-export const SocialList = () => {
+export const SocialList = (props:SocialListPropsType) => {
     return (
         <StyledSocialList>
-            <SociaListItem iconId={"githubIcon-heeader"} />
-            <SociaListItem fill={"#fff"} iconId={"linkedinIcon-heeader"} />
-            <SociaListItem iconId={"figmaIcon-heeader"} />
+            <SociaListItem width = {props.width} height={props.height} iconId={"githubIcon-heeader"} />
+            <SociaListItem width = {props.width} height={props.height} fill={"#fff"} iconId={"linkedinIcon-heeader"} />
+            <SociaListItem width = {props.width} height={props.height} iconId={"figmaIcon-heeader"} />
         </StyledSocialList>
     )
 }

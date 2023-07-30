@@ -4,19 +4,41 @@ import {SectionTitle} from "../../components/SectionTitle";
 import {Icon} from "../../components/icon/Icon";
 import {Slider} from "../../components/slider/Slider";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {Container} from "../../components/Container";
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
-            <SectionTitle>Testimony</SectionTitle>
-            <FlexWrapper direction={"column"} align={"center"} >
-                <Icon iconId={"logo"} viewBox={"0 0 50 50"}/>
-                <Slider/>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>Testimony</SectionTitle>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    <IconWrapper>
+                        <Icon iconId={"logo"} viewBox={"0 0 50 50"}/>
+                    </IconWrapper>
+                    <BoxSlider>
+                        <Slider/>
+                    </BoxSlider>
+                </FlexWrapper>
+            </Container>
         </StyledTestimony>
-    );
+
+    )
+        ;
 };
 
 const StyledTestimony = styled.section`
-  min-height: 70vh;
+  min-height: 50vh;
+
+  & ${SectionTitle} {
+    padding: 47px 0 47px 132px;
+  }
+  
+
+`
+const BoxSlider = styled.div` 
+  margin: 50px 0 50px;
+`
+
+const IconWrapper = styled.div`
+
 `

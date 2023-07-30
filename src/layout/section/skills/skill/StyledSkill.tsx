@@ -23,8 +23,8 @@ export const StyledSkill = (props: StyledSkillPropsType) => {
 
 const StyledProgress = styled.div`
   height: 32px;
-  width: 1320px;
-  //width: 100%;
+  max-width: 1320px;
+  width: 100%;
   position: relative;
   background: #162950;;
   padding: 3px;
@@ -44,6 +44,5 @@ const StyledProgressBar = styled.span`
 const Skill = styled.div`
     color: #fff;
     max-width: 1320px;
-
- 
+    margin: 0 auto 55px;
 `
