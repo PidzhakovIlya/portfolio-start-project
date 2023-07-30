@@ -12,9 +12,9 @@ type SociaListItemPropsType = {
 export const SociaListItem = (props: SociaListItemPropsType) => {
     return (
         <StyledSocialListItem>
-            <a href="#">
+            <SocialLink href="#">
                 <Icon width={props.width} height={props.height} fill={props.fill} iconId={props.iconId} />
-            </a>
+            </SocialLink>
         </StyledSocialListItem>
     )
 }
@@ -23,4 +23,9 @@ const StyledSocialListItem = styled.li`
     
         list-style: none;
         /* color: white; */
+`
+const SocialLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `

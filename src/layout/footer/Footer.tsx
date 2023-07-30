@@ -2,22 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {SocialList} from "../../components/social/SocialList";
+import {theme} from "../../styles/Theme";
 
-export const Footer = () =>{
-    return(
+export const Footer = () => {
+    return (
         <StyledFooter>
             <FlexWrapper gap={"134px"}>
-                <a href="email: ali@ali.ali">Email: <br/> ali@ali.ali</a>
-                <a href="tel:12345678">Telephone:<br/>12345678</a>
+                <a href="tel:12345678">Call me:<br/>123-456-789</a>
+                <a href="email: ali@ali.ali">Email: <br/> xxx@xyz.ali.com</a>
             </FlexWrapper>
-            <SocialList width={"72px"} height={"72px"}/>
+            <SocialList gap ={"65px"} width={"72px"} height={"72px"}/>
         </StyledFooter>
     )
 }
 
 const StyledFooter = styled.footer`
-  min-height: 326px;
-  background-color: #f31717;
+  background-color: ${theme.colors.primaryBg};
+  padding: 100px 260px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -25,7 +26,7 @@ const StyledFooter = styled.footer`
 
   a {
     font-size: 42px;
-    text-align: center;
+    text-align: start;
     text-decoration: none;
     color: #fff;
   }

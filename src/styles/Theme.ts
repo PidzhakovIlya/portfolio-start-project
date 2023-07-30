@@ -6,5 +6,8 @@ export const theme = {
         font: "#ffffff",
         accent: "#720c0c",
         textDescription: "#BCBCBC",
+        borderColor: "#4a4a4a",
+        placeholderColor: "#495057"
+
     }
 }
