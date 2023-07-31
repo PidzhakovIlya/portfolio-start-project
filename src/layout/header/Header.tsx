@@ -5,6 +5,7 @@ import {SocialList} from "../../components/social/SocialList";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 
 const items = ["Projects", "Technologies", "About me"]
 export const Header = () => {
@@ -14,6 +15,7 @@ export const Header = () => {
                 <FlexWrapper justify={"space-around"} align={"center"}>
                     <Logo/>
                     <HeaderMenu menuItems={items}/>
+                    <MobileMenu menuItems={items}/>
                     <SocialList gap={"30px"}/>
                 </FlexWrapper>
             </Container>
