@@ -5,11 +5,19 @@ import {theme} from "../../../styles/Theme";
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
+<<<<<<< HEAD
             <BurgerButton $isOpen={true}>
                 <span></span>
             </BurgerButton>
 
             <MobileMenuPopup $isOpen={true}>
+=======
+            <BurgerButton isOpen={true}>
+                <span></span>
+            </BurgerButton>
+
+            <MobileMenuPopup isOpen={true}>
+>>>>>>> origin/main
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
@@ -38,7 +46,11 @@ const StyledMobileMenu = styled.nav`
     display: block;
   }
 `
+<<<<<<< HEAD
 const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
+=======
+const MobileMenuPopup = styled.div<{isOpen: boolean}>`
+>>>>>>> origin/main
   position: fixed;
   top: 0;
   right: 0;
@@ -48,7 +60,11 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
   opacity: 0.5; 
   z-index: 99999;
   
+<<<<<<< HEAD
   ${props => props.$isOpen && css`
+=======
+  ${props => props.isOpen && css`
+>>>>>>> origin/main
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -64,7 +80,11 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
   }
 `
 
+<<<<<<< HEAD
 const BurgerButton = styled.button<{$isOpen: boolean}>`
+=======
+const BurgerButton = styled.button<{isOpen: boolean}>`
+>>>>>>> origin/main
   position: fixed;
   top: -100px;
   right: -100px;
@@ -81,7 +101,11 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
     bottom: 50px;
     left: 40px;
 
+<<<<<<< HEAD
     ${props => props.$isOpen && css`
+=======
+    ${props => props.isOpen && css`
+>>>>>>> origin/main
       background-color: rgba(255, 255, 255, 0.02);
     `}
   }
@@ -95,7 +119,11 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
       position: absolute;
       transform: translateY(-10px);
       
+<<<<<<< HEAD
        ${props => props.$isOpen && css`
+=======
+       ${props => props.isOpen && css`
+>>>>>>> origin/main
          transform: rotate(-45deg) translateY(0px)
        `};
     }
@@ -109,7 +137,11 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
       position: absolute;
       transform: translateY(10px);
       
+<<<<<<< HEAD
        ${props => props.$isOpen && css`
+=======
+       ${props => props.isOpen && css`
+>>>>>>> origin/main
          transform: rotate(45deg) translateY(0px);
          width: 36px;
        `};
