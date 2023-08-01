@@ -27,8 +27,3 @@ function App() {
 
 export default App;
 
-const Title = styled.div`
-  font-size: 36px;
-  text-align: start;
-  color: #fff;
-`;

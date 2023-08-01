@@ -6,11 +6,11 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
 
-            <BurgerButton $isOpen={true}>
+            <BurgerButton $isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup $isOpen={true}>
+            <MobileMenuPopup $isOpen={false}>
 
                 <ul>
                     {props.menuItems.map((item, index) => {
@@ -49,13 +49,14 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
   left: 0;
   bottom: 0;
   background-color: ${theme.colors.secondaryBg};
-  opacity: 0.5; 
+  opacity: 0.8; 
   z-index: 99999;
+  display: none;
   
 
   ${props => props.$isOpen && css`
 
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
   `}
@@ -74,11 +75,12 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
 const BurgerButton = styled.button<{$isOpen: boolean}>`
 
   position: fixed;
-  top: -100px;
-  right: -100px;
+  top: -30px;
+  right: 0;
   width: 200px;
   height: 200px;
   z-index: 9999999;
+  background: transparent;
 
   span {
     display: block;
@@ -86,8 +88,8 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
     height: 2px;
     background-color: ${theme.colors.font};
     position: absolute;
-    bottom: 50px;
     left: 40px;
+    bottom: 50px;
 
 
     ${props => props.$isOpen && css`
@@ -136,7 +138,7 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
 const Link = styled.a`
   font-size: 30px;
   font-weight: 400;
-  color: transparent; 
+  color: transparent;
 `
 
 const Mask = styled.span`

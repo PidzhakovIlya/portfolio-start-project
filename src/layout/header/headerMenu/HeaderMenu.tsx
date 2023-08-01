@@ -27,9 +27,9 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
 const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
-    flex-shrink: 1;
     gap: 98px;
     list-style: none;
+    position: relative;
   }
   
   @media ${theme.media.tablet} {
