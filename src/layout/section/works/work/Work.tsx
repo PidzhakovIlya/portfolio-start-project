@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {font} from "../../../../styles/Comman";
 
 
 type WorkPropsType = {
@@ -31,6 +32,9 @@ const StyledWork = styled.div`
   background: #0F1624;
   padding: 25px;
 
+  & ${FlexWrapper} {
+    height: 100%;
+  }
 
 `
 const Image = styled.img`
@@ -42,12 +46,14 @@ const Image = styled.img`
 
 
 const Description = styled.p`
+  ${font({Fmax: 28, Fmin: 20})}
   text-align: start;
-  font-size: 28px;
+  //font-size: 28px;
 `
 const Title = styled.h3`
+  ${font({Fmax:36, Fmin:28})}
   color: #FFF;
-  font-size: 36px;
+  //font-size: 36px;
   position: relative;
   text-align: start;
   

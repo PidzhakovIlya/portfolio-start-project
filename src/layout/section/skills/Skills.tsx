@@ -4,6 +4,8 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {StyledSkill} from "./skill/StyledSkill";
 import {Container} from "../../../components/Container";
 
+import {font} from "../../../styles/Comman";
+
 export const MySkils = () => {
     return (
         <StyledSectionSkills>
@@ -34,39 +36,37 @@ export const MySkils = () => {
 }
 
 const StyledSectionSkills = styled.section`
-    & ${SectionTitle} {
-      padding: 130px 0 133px 132px;
-    }
 
 `
 const SkillBarList = styled.div`
-
+ 
 `
 
 const SkillList = styled.ul`
   max-width: 1920px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(5px, auto);
+  grid-template-columns: repeat(auto-fill,  minmax(300px, 33%));
+  //grid-auto-rows: minmax(5px, auto);
+  row-gap: 32px;
   justify-content: center;
   align-content: center;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   padding-bottom: 160px;
 
   li {
-    margin: 30px;
-    align-self: center;
-    width: 25%;
-    font-size: 36px;
+    ${font({Fmax:36, Fmin: 28})}
+    list-style: disc;
+    margin-left: 33%;
+    text-align: start;
   }
 
 
 `
 
 const SubTitle = styled.h3`
-  font-size: 48px;
+  ${font({Fmax:48, Fmin: 36})}
   text-align: center;
   margin-top: 160px;
   margin-bottom: 80px;

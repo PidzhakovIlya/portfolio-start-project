@@ -6,6 +6,7 @@ import {Slider} from "../../components/slider/Slider";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Container} from "../../components/Container";
 
+
 export const Testimony = () => {
     return (
         <StyledTestimony>
@@ -28,12 +29,7 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
   min-height: 50vh;
-
-  & ${SectionTitle} {
-    padding: 47px 132px 47px;
-  }
   
-
 `
 const BoxSlider = styled.div` 
   margin: 50px 0 50px;

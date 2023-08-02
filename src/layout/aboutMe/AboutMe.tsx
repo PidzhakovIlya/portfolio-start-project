@@ -56,9 +56,6 @@ export const AboutMe = () => {
 const MyExperience = styled.section`
   padding-bottom: 176px;
   
-  & ${SectionTitle} {
-    padding: 140px 140px 87px;
-  }
 `
 
 const Experience = styled.div`
