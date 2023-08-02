@@ -74,11 +74,13 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
 const BurgerButton = styled.button<{$isOpen: boolean}>`
 
   position: fixed;
-  top: -100px;
-  right: -100px;
+  top: -33px;
+  right: 318px;
   width: 200px;
   height: 200px;
   z-index: 9999999;
+  background: transparent;
+  
 
   span {
     display: block;
@@ -108,7 +110,7 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
 
        ${props => props.$isOpen && css`
 
-         transform: rotate(-45deg) translateY(0px)
+         transform: rotate(-45deg) translateY(-0px)
        `};
     }
 

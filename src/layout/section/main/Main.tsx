@@ -21,7 +21,6 @@ export const Main = () => {
                     <PhotoWrapper>
                         <StyledPhoto src={myPhoto} alt="my photo"/>
                     </PhotoWrapper>
-
                 </FlexWrapper>
             </Container>
         </StyledMine>
@@ -29,7 +28,7 @@ export const Main = () => {
 }
 
 const StyledPhoto = styled.img`
-  width: 520px;
+  max-width: 520px;
   height: 600px;
   object-fit: cover;
   border-radius: 50px 0;
@@ -42,17 +41,19 @@ const Text = styled.p`
   color: ${theme.colors.textDescription};
   font-size: 36px;
   text-align: start;
- 
+
 `
 const StyledMine = styled.section`
+  position: relative;
   min-height: 100vh;
   display: flex;
+  padding-top: 150px;
 `
 
 const PhotoWrapper = styled.div`
-  position: relative;    
+  position: relative;
   z-index: 0;
-  
+
   &::before {
     content: url(${themPhoto});
     position: absolute;

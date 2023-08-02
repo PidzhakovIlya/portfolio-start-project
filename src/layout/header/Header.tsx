@@ -31,5 +31,5 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   top: 0;
-
+  
 `
