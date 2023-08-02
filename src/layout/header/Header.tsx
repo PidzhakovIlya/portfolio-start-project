@@ -7,6 +7,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Comman";
 
 const items = ["Projects", "Technologies", "About me"]
 export const Header = () => {
@@ -25,9 +26,10 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
+  ${font({Fmax: 30, Fmin: 20})}
   background-color: #0F1624;
   padding: 44px 0;
-  font-size: 30px;
+  //font-size: 30px;
   position: fixed;
   left: 0;
   right: 0;

@@ -51,7 +51,7 @@ const StyledMine = styled.section`
 `
 
 const PhotoWrapper = styled.div`
-  position: relative;    
+  //position: relative;    
   z-index: 0;
   
 //   &::before {

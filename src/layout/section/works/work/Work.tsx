@@ -31,6 +31,9 @@ const StyledWork = styled.div`
   background: #0F1624;
   padding: 25px;
 
+  & ${FlexWrapper} {
+    height: 100%;
+  }
 
 `
 const Image = styled.img`
