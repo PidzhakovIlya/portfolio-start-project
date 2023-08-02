@@ -6,6 +6,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
+import {theme} from "../../styles/Theme";
 
 const items = ["Projects", "Technologies", "About me"]
 export const Header = () => {
@@ -32,5 +33,6 @@ const StyledHeader = styled.header`
   right: 0;
   top: 0;
   z-index: 1;
-
+  
+  
 `

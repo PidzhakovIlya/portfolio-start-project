@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { SociaListItem } from "./SocilListItem";
+import {theme} from "../../styles/Theme";
 
 type SocialListPropsType = {
     width?: string
@@ -22,4 +23,7 @@ export const SocialList = (props:SocialListPropsType) => {
 const StyledSocialList = styled.ul<SocialListPropsType>`
     display: flex;
     gap: ${props => props.gap};
+  @media ${theme.media.tablet} {
+      display: none;
+  }
 `

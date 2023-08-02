@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import themPhoto from "../../../assets/images/drawing.svg"
+import {font} from "../../../styles/Comman";
 
 
 export const Main = () => {
@@ -30,22 +31,25 @@ export const Main = () => {
 }
 
 const Title = styled.h1`
-  font-size: 64px;
+  ${font({weight: 700, Fmax: 64, Fmin: 36, })};
+  
 `
 const Text = styled.p`
+  ${font({weight: 600, Fmax: 36, Fmin: 24,})}
   display: inline-block;
   max-width: 989px;
   margin: 34px 0 92px;
   color: ${theme.colors.textDescription};
-  font-size: 36px;
   text-align: start;
  
 `
 const StyledMine = styled.section`
   min-height: 100vh;
   display: flex;
+  align-items: center;
   margin-top: 136px;
 `
+
 const PhotoWrapper = styled.div`
   position: relative;    
   z-index: 0;

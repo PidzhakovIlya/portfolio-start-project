@@ -44,7 +44,7 @@ const StyledWorks = styled.section`
 
 const GridWrapper = styled.div`
  display: grid;
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(auto-fill, minmax(360px, 550px));
   grid-auto-rows: minmax(700px, auto);
   justify-content: center;
   align-content: center;

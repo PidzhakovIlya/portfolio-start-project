@@ -40,26 +40,27 @@ const StyledSectionSkills = styled.section`
 
 `
 const SkillBarList = styled.div`
-
+ 
 `
 
 const SkillList = styled.ul`
   max-width: 1920px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(5px, auto);
+  grid-template-columns: repeat(auto-fill,  minmax(300px, 33%));
+  //grid-auto-rows: minmax(5px, auto);
+  row-gap: 32px;
   justify-content: center;
   align-content: center;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   padding-bottom: 160px;
 
   li {
-    margin: 30px;
-    align-self: center;
-    width: 25%;
+    list-style: disc;
     font-size: 36px;
+    margin-left: 33%;
+    text-align: start;
   }
 
 

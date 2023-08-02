@@ -19,7 +19,7 @@ function App() {
             <MySkils/>
             <Testimony/>
             <Contact/>
-            <AboutMe/>
+            {/*<AboutMe/>*/}
             <Footer/>
         </div>
     );

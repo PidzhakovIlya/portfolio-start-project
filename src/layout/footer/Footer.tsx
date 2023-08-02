@@ -7,7 +7,7 @@ import {theme} from "../../styles/Theme";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper gap={"134px"}>
+            <FlexWrapper gap={"134px"} wrap={"wrap"}>
                 <a href="tel:12345678">Call me:<br/>123-456-789</a>
                 <a href="email: ali@ali.ali">Email: <br/> xxx@xyz.ali.com</a>
             </FlexWrapper>
@@ -22,6 +22,7 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   
 
   a {
