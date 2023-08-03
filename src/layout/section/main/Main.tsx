@@ -30,6 +30,13 @@ export const Main = () => {
 }
 
 
+const StyledMine = styled.section`
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 50px;
+`
+
 const Title = styled.h1`
   ${font({weight: 700, Fmax: 64, Fmin: 36, })};
   
@@ -43,14 +50,6 @@ const Text = styled.p`
   text-align: start;
 
 `
-const StyledMine = styled.section`
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  margin-top: 136px;
-`
-
 const PhotoWrapper = styled.div`
   //position: relative;    
   z-index: 0;

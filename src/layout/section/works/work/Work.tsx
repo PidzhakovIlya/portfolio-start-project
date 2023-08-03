@@ -39,7 +39,7 @@ const StyledWork = styled.div`
 `
 const Image = styled.img`
   width: 100%;
-  height: 266px;
+  max-height: 266px;
   object-fit: cover;
   border-radius: 24px 8px 8px 8px;
 `

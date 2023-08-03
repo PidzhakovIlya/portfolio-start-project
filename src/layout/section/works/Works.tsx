@@ -5,6 +5,7 @@ import {Work} from "./work/Work";
 import projectImg1 from "../../../assets/images/project-1.webp"
 import projectImg2 from "../../../assets/images/project-2.webp"
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 const worksItems = ["Project-1", "Project-2", "Project-3",]
 export const Works = () => {
@@ -42,10 +43,15 @@ const StyledWorks = styled.section`
 
 const GridWrapper = styled.div`
  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 550px));
-  grid-auto-rows: minmax(700px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(calc(360px - 30px), 550px));
+  grid-auto-rows: minmax(350px, auto);
   justify-content: center;
   align-content: center;
   gap: 97px 220px;
   padding-bottom: 200px;
+  
+  @media ${theme.media.mobile}{
+    padding-bottom: 50px;
+    gap: 30px;
+  }
 `

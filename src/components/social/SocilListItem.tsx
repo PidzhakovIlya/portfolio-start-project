@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "../icon/Icon";
 import { styled } from "styled-components";
+import {theme} from "../../styles/Theme";
 
 type SociaListItemPropsType = {
     iconId: string
@@ -28,4 +29,5 @@ const SocialLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `

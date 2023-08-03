@@ -5,6 +5,7 @@ import {StyledSkill} from "./skill/StyledSkill";
 import {Container} from "../../../components/Container";
 
 import {font} from "../../../styles/Comman";
+import {theme} from "../../../styles/Theme";
 
 export const MySkils = () => {
     return (
@@ -68,6 +69,9 @@ const SkillList = styled.ul`
 const SubTitle = styled.h3`
   ${font({Fmax:48, Fmin: 36})}
   text-align: center;
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding: 160px 0 80px;
+ 
+  @media ${theme.media.tablet}{
+    padding: 50px 0 40px;
+  }
 `

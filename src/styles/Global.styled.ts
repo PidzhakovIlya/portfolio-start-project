@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.font};
     line-height: 1.2;
+    min-width: 360px;
   }
 
   a {
@@ -39,6 +40,10 @@ export const GlobalStyle = createGlobalStyle`
     color: #FFF;
     font-family: Poppins, sans-serif;
     font-size: 20px;
+  }
+  
+  section {
+    padding: 100px 0;
   }
 
   section:nth-of-type(odd) {

@@ -29,5 +29,5 @@ const ListItem = styled.li`
 const Link = styled.a`
   font-size: 50px;
   font-weight: 400;
-  
+
 `
