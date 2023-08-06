@@ -1,14 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {SocialList} from "../../components/social/SocialList";
-import {theme} from "../../styles/Theme";
-import {font} from "../../styles/Comman";
 import {Container} from "../../components/Container";
+import {S} from "./Footer_styles";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
     return (
-        <StyledFooter>
+        <S.Footer>
             <Container>
                 <FlexWrapper justify={"space-evenly"} align={"center"} wrap={"wrap"}>
                     <FlexWrapper gap={"134px"} align={"center"} wrap={"wrap"}>
@@ -18,43 +16,8 @@ export const Footer = () => {
                     <SocialList gap={"65px"} width={"72px"} height={"72px"}/>
                 </FlexWrapper>
             </Container>
-        </StyledFooter>
+        </S.Footer>
     )
 }
 
-const StyledFooter = styled.footer`
-  background-color: ${theme.colors.primaryBg};
 
-
-  & a {
-    ${font({weight: 600, Fmax: 42, Fmin: 28})};
-    padding: 100px 0;
-    text-align: start;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  @media ${theme.media.tablet} {
-    gap: 20px;
-    padding: 20px 0;
-    justify-content: center;
-    
-    & SocialList{
-      width: 30px;
-    }
-    
-    &  ${FlexWrapper} {
-      
-      justify-content: center;
-      gap: 50px;
-    }
-
-    & ${FlexWrapper} ${FlexWrapper} a {
-      padding: 20px 0;
-      text-align: center;
-    }
-  }
-
-
-}
-`

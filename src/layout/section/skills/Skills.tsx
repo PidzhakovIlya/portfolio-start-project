@@ -1,13 +1,11 @@
 import React from "react";
-import {styled} from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {StyledSkill} from "./skill/StyledSkill";
+import {Skill} from "./skill/Skill";
 import {Container} from "../../../components/Container";
-import {font} from "../../../styles/Comman";
-import {theme} from "../../../styles/Theme";
+import { S } from "./Skills_Styled";
 
 
-const SkillData = [
+const skillData = [
     {
         nameSkill: "Html",
         experience: "Beginner"
@@ -38,7 +36,7 @@ const SkillData = [
     },
 ];
 
-const SkillListData = [
+const skillListData = [
     'Git',
     'Wordpress',
     'Teamwork',
@@ -50,64 +48,25 @@ const SkillListData = [
 
 export const MySkills = () => {
     return (
-        <StyledSectionSkills>
+        <S.SectionSkills>
             <Container>
                 <SectionTitle>Technologies</SectionTitle>
-                <SkillBarList>
+                <S.SkillBarList>
 
-                    {SkillData.map((s, index) => {
-                        return <StyledSkill nameSkill={s.nameSkill} experience={s.experience} key={index}/>
+                    {skillData.map((s, index) => {
+                        return <Skill nameSkill={s.nameSkill} experience={s.experience} key={index}/>
 
                     })}
 
-                </SkillBarList>
-                <SubTitle>Additional technologies and skills</SubTitle>
-                <SkillList>
-                    {SkillListData.map((item)=>{
-                        return <li>{item}</li>
+                </S.SkillBarList>
+                <S.SubTitle>Additional technologies and skills</S.SubTitle>
+                <S.SkillList>
+                    {skillListData.map((item, index)=>{
+                        return <li key={index}>{item}</li>
                     })}
-                </SkillList>
+                </S.SkillList>
             </Container>
-        </StyledSectionSkills>
+        </S.SectionSkills>
     )
 }
 
-const StyledSectionSkills = styled.section`
-
-`
-const SkillBarList = styled.div`
-
-`
-
-const SkillList = styled.ul`
-  max-width: 1920px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 33%));
-  //grid-auto-rows: minmax(5px, auto);
-  row-gap: 32px;
-  justify-content: center;
-  align-content: center;
-  justify-items: start;
-  align-items: center;
-  padding-bottom: 160px;
-
-  li {
-    ${font({Fmax: 36, Fmin: 28})}
-    list-style: disc;
-    margin-left: 33%;
-    text-align: start;
-  }
-
-
-`
-
-const SubTitle = styled.h3`
-  ${font({Fmax: 48, Fmin: 36})}
-  text-align: center;
-  padding: 160px 0 80px;
-
-  @media ${theme.media.tablet} {
-    padding: 50px 0 40px;
-  }
-`
