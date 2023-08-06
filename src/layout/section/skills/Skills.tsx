@@ -3,34 +3,70 @@ import {styled} from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {StyledSkill} from "./skill/StyledSkill";
 import {Container} from "../../../components/Container";
-
 import {font} from "../../../styles/Comman";
 import {theme} from "../../../styles/Theme";
 
-export const MySkils = () => {
+
+const SkillData = [
+    {
+        nameSkill: "Html",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "CSS, Sass & Bootstrap",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "JavaScript, TypeScript, JQuery",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "UI design in Figma",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "Angular",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "React",
+        experience: "Beginner"
+    },
+    {
+        nameSkill: "React Native",
+        experience: "Beginner"
+    },
+];
+
+const SkillListData = [
+    'Git',
+    'Wordpress',
+    'Teamwork',
+    'Quick learning',
+    'Engagement',
+    'B2 english',
+    'RWD',
+];
+
+export const MySkills = () => {
     return (
         <StyledSectionSkills>
             <Container>
                 <SectionTitle>Technologies</SectionTitle>
                 <SkillBarList>
-                    <StyledSkill nameSkil="Html" experiens="Beginner"/>
-                    <StyledSkill nameSkil="CSS, Sass & Bootstrap" experiens="Beginner"/>
-                    <StyledSkill nameSkil="JavaScript, TypeScript, JQuery" experiens="Beginner"/>
-                    <StyledSkill nameSkil="UI design in Figma" experiens="Beginner"/>
-                    <StyledSkill nameSkil="Angular" experiens="Beginner"/>
-                    <StyledSkill nameSkil="React" experiens="Beginner"/>
-                    <StyledSkill nameSkil="React Native" experiens="Beginner"/>
+
+                    {SkillData.map((s, index) => {
+                        return <StyledSkill nameSkill={s.nameSkill} experience={s.experience} key={index}/>
+
+                    })}
+
                 </SkillBarList>
                 <SubTitle>Additional technologies and skills</SubTitle>
-                    <SkillList>
-                        <li>Git</li>
-                        <li>Wordpress</li>
-                        <li>Teamwork</li>
-                        <li>Quick learning</li>
-                        <li>Engagement</li>
-                        <li>B2 english</li>
-                        <li>RWD</li>
-                    </SkillList>
+                <SkillList>
+                    {SkillListData.map((item)=>{
+                        return <li>{item}</li>
+                    })}
+                </SkillList>
             </Container>
         </StyledSectionSkills>
     )
@@ -40,14 +76,14 @@ const StyledSectionSkills = styled.section`
 
 `
 const SkillBarList = styled.div`
- 
+
 `
 
 const SkillList = styled.ul`
   max-width: 1920px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill,  minmax(300px, 33%));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 33%));
   //grid-auto-rows: minmax(5px, auto);
   row-gap: 32px;
   justify-content: center;
@@ -57,7 +93,7 @@ const SkillList = styled.ul`
   padding-bottom: 160px;
 
   li {
-    ${font({Fmax:36, Fmin: 28})}
+    ${font({Fmax: 36, Fmin: 28})}
     list-style: disc;
     margin-left: 33%;
     text-align: start;
@@ -67,11 +103,11 @@ const SkillList = styled.ul`
 `
 
 const SubTitle = styled.h3`
-  ${font({Fmax:48, Fmin: 36})}
+  ${font({Fmax: 48, Fmin: 36})}
   text-align: center;
   padding: 160px 0 80px;
- 
-  @media ${theme.media.tablet}{
+
+  @media ${theme.media.tablet} {
     padding: 50px 0 40px;
   }
 `

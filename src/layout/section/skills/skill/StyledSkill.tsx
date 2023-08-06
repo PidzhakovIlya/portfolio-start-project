@@ -2,16 +2,16 @@ import React from "react";
 import { styled } from "styled-components";
 
 type StyledSkillPropsType = {
-    nameSkil: string
-    experiens: string
+    nameSkill: string
+    experience: string
 }
 
 export const StyledSkill = (props: StyledSkillPropsType) => {
     return (
         <Skill>
             <div>
-                <span>{props.nameSkil}</span>
-                <span>{props.experiens}</span>
+                <span>{props.nameSkill}</span>
+                <span>{props.experience}</span>
             </div>
             <StyledProgress>
                 <StyledProgressBar></StyledProgressBar>

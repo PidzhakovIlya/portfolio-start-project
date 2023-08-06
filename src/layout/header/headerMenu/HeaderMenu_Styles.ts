@@ -1,6 +1,7 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
 
+//                     =========Menu========
 
 const Link = styled.a`
   font-size: 30px;
@@ -63,8 +64,6 @@ const MenuItem = styled.li`
 
 
 //                           <======Style Mobile Menu=====>
-
-
 
 const MobileMenu = styled.nav`
 
@@ -163,8 +162,8 @@ const BurgerButton = styled.button<{$isOpen: boolean}>`
 
   }
 `
-//                   <<<<<<<<<<<DESKTOP MENU>>>>>>>>>>>>
 
+//                   <<<<<<<<<<<DESKTOP MENU>>>>>>>>>>>>
 
 const DesktopMenu = styled.nav`
   ul {
